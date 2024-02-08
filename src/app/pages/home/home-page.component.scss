@@ -1,0 +1,20 @@
+.our-location {
+    display: flex;
+    flex-direction: row;
+    background-color: #f6f6f6;
+    box-sizing: border-box;
+    padding:100px 0;
+    text-align: center;   
+}
+
+
+.our-location-item {
+    text-align: center;
+}
+
+.our-location {
+    p.normalDesc {
+        max-width: 60%;
+        margin: 0 auto;
+    }
+}

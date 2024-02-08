@@ -1,0 +1,92 @@
+.navbar-item {
+    // background-color: blue;
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    cursor: default;
+
+    &__title {
+        // background-color: red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black;
+        font-size: 1.5rem;
+
+        &-dropdown {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // background-color: grey;
+
+            i {
+                font-size: 1.6rem;
+                transition: transform 0.4s;
+            }
+
+            &.open i {
+                transform: rotate(180deg);
+            }
+        }
+        &-link {
+            cursor: pointer;
+
+            &:hover{
+                color: #222;
+            }
+        }
+    }
+
+    &:not(:last-child) {
+        margin-right: 2.5rem;
+    }
+}
+
+// app-navbar-item {
+//     &:not(:last-child) {
+//         margin-right: 2.5rem;
+//     }
+// }
+
+// .navbar-item {
+//     position: relative;
+
+//     display: flex;
+//     flex-direction: row;
+//     align-items: center;
+//     justify-content: center;
+
+//     font-size: 1.5rem;
+//     cursor: default;
+//     i {
+//         transition: transform 0.4s;
+//         font-size: 1.6rem;
+//     }
+
+//     // &.open &__dropdown {
+//     //     display: block;
+//     // }
+//     &.open i {
+//         transform: rotate(180deg);
+//     }
+
+//     &.mobile{
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//     }
+// }
+
+// .clickable {
+//     cursor: pointer;
+//     &:hover {
+//         // color: #3195FF;
+
+//         color: #222;
+//         // font-weight: bold;
+//     }
+// }

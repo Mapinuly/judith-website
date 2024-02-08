@@ -1,0 +1,13 @@
+<div>
+  <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+    <div ngxSlickItem *ngFor="let card of cards" class="slide hero-slider">
+      <div class="slider_content">
+        <h5>{{card?.tag}}</h5>
+        <h2>{{card?.title}}</h2>
+        <p>{{card?.description}}</p>
+        <a href="#">{{card?.linkText}}</a>
+      </div>
+    </div>
+  </ngx-slick-carousel>
+
+</div>

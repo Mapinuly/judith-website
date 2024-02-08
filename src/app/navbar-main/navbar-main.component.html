@@ -1,0 +1,94 @@
+<nav class="navbar">
+    <ul class="main-list">
+        <li *ngFor="let item of navItems" class="position-relative" (click)="toggleSection(item.name)">
+            {{item.name}}
+        </li>
+    </ul>
+</nav>
+
+<ng-container *ngIf="activeSection === 'Technologies'">
+    <section class="sub-menus"  >
+        <div class="">
+            <div class="sub-menu" >
+                <div class="sub-list" *ngFor="let menuItem of menuItems">
+                    <h2 class="li-heading">{{ menuItem.heading }}</h2>
+                <ul>    
+                    <li class="li-sub-heading" *ngFor="let subItem of menuItem.subItems">
+                        {{ subItem   }}</li>
+                </ul>
+                </div>
+            </div> 
+        </div>
+    </section>
+</ng-container>
+<ng-container *ngIf="activeSection === 'Data Providers'">
+    <section class="sub-menus2" *ngIf="activeSection === 'Data Providers'">
+        <div class="">
+            <div class="sub-menu2" >
+                <div class="sub-list" *ngFor="let data of dataProviders">
+                    <h2 class="li-heading">{{ data.heading }}</h2>
+                <ul>
+                    <li class="li-sub-heading" *ngFor="let subItem of data.subItems">{{ subItem }}</li>
+                </ul>
+                </div>
+            </div> 
+        </div>
+    </section>
+</ng-container>
+
+
+
+<ng-container *ngIf="activeSection === 'Resources'">
+    <section class="sub-menus3"  >
+        <div class="">
+            <div class="sub-menu3" >
+                <div class="sub-list" *ngFor="let resource of Resources">
+                    <h2 class="li-heading">{{ resource.heading }}</h2>
+                <ul>
+                    <li class="li-sub-heading" *ngFor="let subItem of resource.subItems">{{ subItem }}</li>
+                </ul>
+                </div>
+            </div> 
+        </div>
+    </section>
+</ng-container>
+
+<ng-container *ngIf="activeSection === 'Events'">
+    <section class="sub-menus4" >
+        <div class="">
+            <div class="sub-menu4" >
+                <div class="sub-list" *ngFor="let event of events" >
+                    <h2 class="li-heading">{{ event.heading }}</h2>
+                <ul>
+                    <li class="li-sub-heading" *ngFor="let subItem of event.subItems">{{ subItem }}</li>
+                </ul>
+                </div>
+            </div> 
+        </div>
+    </section>
+</ng-container>
+
+<!-- 
+
+ <nav class="navbar">
+    <ul class="main-list">
+        <li *ngFor="let item of headerResponse" class="position-relative" (click)="toggleSection(item.name)">
+            {{ item.name }}
+        </li>
+    </ul>
+</nav>
+
+ <ng-container *ngFor="let section of headerResponse">
+    <section class="sub-menus" *ngIf="activeSection === section.name">
+        <div class="">
+            <div class="sub-menu">
+                <div class="sub-list" *ngFor="let menuItem of section.sub_links">
+                    <h2 class="li-heading">{{ menuItem.name }}</h2>
+                    <ul>
+                        <li class="li-sub-heading" *ngFor="let subItem of menuItem.sub_links">{{ subItem.name }}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</ng-container> -->

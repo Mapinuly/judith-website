@@ -1,0 +1,146 @@
+.main-div{
+    margin-top: 20rem;
+    .sub-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        .img-div{
+            display: flex;
+            gap: 8px;
+        }
+        img{
+            width: 40px;
+        }
+        h1{
+            font-size: 48px;
+            font-weight: 600;
+            text-align: center;
+        }
+        p{
+            font-size: 25px;
+            margin: 41px;
+            font-family: system-ui;
+        }
+        button{
+            cursor: pointer;
+    display: block;
+    min-width: 200px;
+    margin-right: 0;
+    margin-left: 0;
+    padding: 16px 36px;
+    border-radius: 100px;
+    background-color: #0084ff;
+    box-shadow: inset 0 0 0 30px rgba(255, 255, 255, 0);
+    transition: box-shadow 0.3s;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+        }
+    }
+    .workspace {
+        padding-top: 5rem;
+        margin: 45px;
+        display: flex;
+        flex-direction: column;
+        gap: 21px;
+        .first {
+            font-size: 15px;
+            font-weight: 500;
+        }
+    }
+    .second-section{
+        display: flex;
+        justify-content: center;
+        .work-img{
+            width: 600px;
+        }
+    }
+    .why{
+       margin: 40px;
+        .choose {
+            font-size: 15px;
+            font-weight: 500;
+            text-decoration: underline;
+            padding-top: 1rem;
+        }
+        .sec {
+            padding-top: 30px;
+            font-size: 15px;
+        }
+        .advantages-head {
+            padding-top: 30px;
+        }
+        .point-main {
+            /* padding-top: 20px; */
+            margin: 22px;
+            .points {
+                font-size: 15px;
+                padding-top: 2px;
+            }
+        }
+    }
+}
+
+.work_space_collection {
+    padding: 150px 0;
+    h2 {
+        font-size: 36px;
+        margin-bottom: 25px;
+    }
+    
+    p {font-size: 18px;}
+}
+
+section.why_us {
+    padding: 150px 0;
+    background: #f7f9fc;
+    h3 {
+        text-align: center;
+        line-height: 50px;
+        font-size: 3.2rem;
+        font-weight: 600;
+        margin: 0 auto 2rem;
+        color: #23262d;
+        max-width: 60%;
+    }
+    p {
+        text-align: center;
+        font-size: 1.6rem;
+        line-height: 22px;
+        color: #566171;
+        margin: 1.5rem auto 10px;
+        max-width: 78%;
+    }
+    .row {
+        svg {
+            max-width: 80px;
+            height: auto;
+            margin-bottom: 12px;
+        }
+        h3 {
+            font-size: 2.2rem;
+            text-align: left;
+            margin: 0;
+            max-width: none;
+        }
+        li {
+            font-size: 1.6rem;
+            line-height: 22px;
+            
+        }
+    }
+    .about_img {
+        img {
+            max-height: 450px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 13px;
+        }
+    }
+}

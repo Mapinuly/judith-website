@@ -1,0 +1,213 @@
+<section class="google-maps-platform">
+
+
+  <div class="bg-video">
+    <div class="bg-video__title">
+      <h2>Elevate everything you build</h2>
+      <p>Create better experiences and improve operations with rich, detailed geospatial data, helpful mapping tools,
+        and industry-leading reliability.</p>
+    </div>
+    <video class="bg-video__content" autoplay muted loop>
+      <source src="http://localhost:4000/gogis/api/assets/images?name=google-tecnolgy.mp4" type="video/mp4">
+      Your browser is not supported!
+    </video>
+  </div>
+
+  <div class="why-hero-section">
+
+    <!-- Google Maps Hero Why-->
+    <div class="why-hero-google">
+
+      <div class="why-hero-google__stat">
+        <div class="why-hero-google__stat__title">
+          <span class="why-hero-google__stat__title-figure"> <span>250</span>+</span> countries and&nbsp;territories
+        </div>
+
+        <div class="why-hero-google__stat__body"> Build with maps in more than 250 countries and&nbsp;territories.
+        </div>
+      </div>
+
+      <div class="why-hero-google__stat">
+        <div class="why-hero-google__stat__title">
+          <span class="why-hero-google__stat__title-figure"><span>1</span>B+</span> monthly active&nbsp;users
+        </div>
+        <div class="why-hero-google__stat__body">
+          Scale confidently, backed by our&nbsp;infrastructure.
+        </div>
+      </div>
+
+      <div class="why-hero-google__stat">
+        <div class="why-hero-google__stat__title">
+          <span class="why-hero-google__stat__title-figure"><span>50</span>M</span> updates&nbsp;daily
+        </div>
+        <div class="why-hero-google__stat__body">
+          Count on dynamic location information.
+        </div>
+      </div>
+
+      <div class="why-hero-google__stat">
+        <div class="why-hero-google__stat__title">
+          <span class="why-hero-google__stat__title-figure"><span>200</span>M+</span> businesses and&nbsp;places
+        </div>
+        <div class="why-hero-google__stat__body">
+          Build with comprehensive, global points of interest&nbsp;data.
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="google-maps-desc">
+    <span><b>Synopsis</b></span><br>
+    Google Maps is one of the most widely used cloud-based mapping platforms and comprehensive sources of location
+    data
+    worldwide. Individuals, organizations, businesses and governments are all benefiting from adding its powerful
+    location intelligence to their daily use of data and information systems.
+
+    GoGIS is the Google Premier Partner and reseller of the Google Maps Platform in Israel, with a specialized team of
+    experts, certified in Google Maps and Cloud Platforms. We are here to help with the adoption and use of Google
+    Maps.
+    We can unlock volume discounts, help your team build and optimize the use of Google APIs in the most efficient way
+    possible and offer free basic support for the life of your account!
+
+  </div>
+
+</section>
+
+<section>
+  <div class="technology__sub-title">
+    <h2>Find the right custom map products</h2>
+    <p> Discover what tools you need to transform your maps and location-based experiences.</p>
+  </div>
+
+  <div class="section-scope">
+    <div class="section-scope__item light">
+
+      <div class="section-scope__item__icon">
+
+        <img loading="lazy" src="https://mapsplatform.google.com/static/images/icons/products/maps_icon.svg" width="60"
+          height="60" class="product-hero__content__cards__card__top__icon " alt="" role="presentation">
+
+      </div>
+      <h3 class="section-scope__item__title">Maps</h3>
+      <p class="section-scope__item__desc">Build customized, agile experiences that bring the real world to your users
+        with Static and Dynamic maps, Street View imagery, and 360° views
+      </p>
+
+      <a class="section-scope__link" href="https://mapsplatform.google.com/maps-products/#maps-section"
+        target="_blank">Learn More
+      </a>
+    </div>
+    <!-- <div class="section-scope__item black preview"> -->
+    <div class="section-scope__item darkblue">
+      <h4 class="section-scope__item-title">{{mapsSectionTitle}}</h4>
+      <p class="section-scope__item-desc">{{mapsSectionDesc}}</p>
+      <ul>
+        <li *ngFor="let mapItem of mapsItems" class="section-scope__sub-item" (mouseout)="resetMapsSection()"
+          (mouseover)="setMapsSection(mapItem)">
+          <img [src]="mapItem.img" alt="">
+          {{mapItem?.title}}
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section-scope">
+
+    <div class="section-scope__item preview">
+      <h4 class="section-scope__item-title dark">{{routesSectionTitle}}</h4>
+      <p class="section-scope__item-desc dark">{{routesSectionDesc}}</p>
+      <ul>
+        <li *ngFor="let routeItem of routesItems" class="section-scope__sub-item" (mouseout)="resetRoutesSection()"
+          (mouseover)="setRoutesSection(routeItem)">
+          <img [src]="routeItem.img" alt="">
+          {{routeItem?.title}}
+        </li>
+      </ul>
+    </div>
+
+    <div class="section-scope__item ">
+
+      <div class="section-scope__item__icon">
+
+        <img loading="lazy" src="https://mapsplatform.google.com/static/images/icons/products/routes_icon.svg"
+          width="60" height="60" class="product-hero__content__cards__card__top__icon " alt="" role="presentation">
+
+      </div>
+      <h3 class="section-scope__item__title">Routes</h3>
+      <p class="section-scope__item__desc">Help your users find the ideal way to get from A to Z with comprehensive
+        data and real-time traffic
+      </p>
+      <a class="section-scope__link" href="https://mapsplatform.google.com/maps-products/#routes-section"
+        target="_blank">Learn More</a>
+    </div>
+  </div>
+
+  <div class="section-scope">
+
+    <div class="section-scope__item light">
+      <div class="section-scope__item__icon">
+
+        <img loading="lazy" src="https://mapsplatform.google.com/static/images/icons/products/places_icon.svg"
+          width="60" height="60" class="product-hero__content__cards__card__top__icon " alt="" role="presentation">
+
+      </div>
+
+      <h3 class="section-scope__item__title">Places</h3>
+      <p class="section-scope__item__desc">Help users discover the world with rich place data for over 200 million
+        points of interest. Enable them to find specific places using phone numbers, addresses, and more
+      </p>
+
+      <a class="section-scope__link" href="https://mapsplatform.google.com/maps-products/#places-section"
+        target="_blank">Learn More</a>
+
+    </div>
+
+    <div class="section-scope__item  light">
+      <h4 class="section-scope__item-title dark">{{placesSectionTitle}}</h4>
+      <p class="section-scope__item-desc dark">{{placesSectionDesc}}</p>
+      <ul>
+        <li *ngFor="let placeItems of placesItems" class="section-scope__sub-item" (mouseout)="resetPlacesSection()"
+          (mouseover)="setPlacesSection(placeItems)">
+          <img [src]="placeItems.img" alt="">
+          {{placeItems?.title}}
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section-scope">
+    <div class="section-scope__item light">
+
+      <div class="section-scope__item__icon">
+
+        <img loading="lazy" src="https://mapsplatform.google.com/static/images/icons/products/maps_icon.svg" width="60"
+          height="60" class="product-hero__content__cards__card__top__icon " alt="" role="presentation">
+
+      </div>
+      <h3 class="section-scope__item__title">API</h3>
+      <p class="section-scope__item__desc">Build customized, agile experiences that bring the real world to your users
+        with Static and Dynamic maps, Street View imagery, and 360° views
+      </p>
+
+      <a class="section-scope__link" href="https://mapsplatform.google.com/maps-products/#maps-section"
+        target="_blank">Learn More
+      </a>
+    </div>
+    <!-- <div class="section-scope__item black preview"> -->
+    <div class="section-scope__item darkblue">
+      <h4 class="section-scope__item-title">{{mapsSectionTitle}}</h4>
+      <p class="section-scope__item-desc">{{mapsSectionDesc}}</p>
+      <ul>
+        <li *ngFor="let mapItem of mapsItems" class="section-scope__sub-item" (mouseout)="resetMapsSection()"
+          (mouseover)="setMapsSection(mapItem)">
+          <img [src]="mapItem.img" alt="">
+          {{mapItem?.title}}
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</section>
+
+

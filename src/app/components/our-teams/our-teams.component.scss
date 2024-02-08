@@ -1,0 +1,80 @@
+.our-teams {
+    padding: 50px;
+    box-sizing: border-box;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image:linear-gradient(110deg, #020008 4.3%, #05020a 96.7%);
+
+    &__title {
+        font-size: 3.5rem;
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+    }
+
+    .profile {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        // background: blue;
+        margin-bottom: 17.5rem;
+
+        &__details {
+            // background-color: red;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+
+            &-full-name {
+                font-size: 32px;
+                font-weight: 400;
+                margin-bottom: 7px;
+            }
+            &-job {
+                font-size: 26px;
+                font-weight: 400;
+                margin-bottom: 2rem;
+                color: gray;
+                letter-spacing: 1px;
+            }
+            &-desc {
+                max-width: 80%;
+                font-size: 20px;
+                line-height: 2.5rem;
+                letter-spacing: 1px;
+            }
+        }
+
+        &__avatar {
+            // background-color: yellow;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            &-img {
+                background-color: wh;
+                width: 250px;
+                height: 250px;
+                border-radius: 50%;
+                // border-radius: 50px;
+                
+                overflow: hidden;
+                margin-bottom: 25px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                // clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+                // transform: rotate(45deg);
+            }
+
+            img {
+                // width: 120%;
+                width: 100%;
+                object-fit: cover;
+                height: 100%;
+                // transform: rotate(-45deg) scale(1.4) translateX(-25px);
+            }
+        }
+    }
+}

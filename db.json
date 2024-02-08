@@ -1,0 +1,274 @@
+{
+ 
+  "nav_bar_data": {
+    "_id": "650d901110b241a04d08239e",
+    "header": [
+      {
+        "id": "h001",
+        "name": "Technologies",
+        "sub_links": [
+          {
+            "id": "hs001",
+            "name": "Google",
+            "sub_links": [
+              {
+                "id": "hs002",
+                "name": "Maps",
+                "path": ""
+              },
+              {
+                "id": "hs003",
+                "name": "Workspace",
+                "path": ""
+              },
+              {
+                "id": "hs004",
+                "name": "Cloud",
+                "path": ""
+              }
+            ]
+          },
+          {
+            "id": "hs005",
+            "name": "HERE Technologies",
+            "sub_links": [
+              {
+                "id": "hs006",
+                "name": "Online",
+                "path": ""
+              },
+              {
+                "id": "hs007",
+                "name": "Offline Content",
+                "path": ""
+              },
+              {
+                "id": "hs008",
+                "name": "On-premise",
+                "path": ""
+              }
+            ]
+          },
+          {
+            "id": "hs009",
+            "name": "TomTom",
+            "sub_links": [
+              {
+                "id": "hs010",
+                "name": "Real-Time Traffic Data",
+                "path": ""
+              },
+              {
+                "id": "hs011",
+                "name": "On-premise",
+                "path": ""
+              }
+            ]
+          },
+          {
+            "id": "hs012",
+            "name": "Carto",
+            "sub_links": [
+              {
+                "id": "hs013",
+                "name": "Dashboard",
+                "path": ""
+              },
+              {
+                "id": "hs014",
+                "name": "Online",
+                "path": ""
+              },
+              {
+                "id": "hs015",
+                "name": "On-premise",
+                "path": ""
+              }
+            ]
+          },
+          {
+            "id": "hs016",
+            "name": "Thermopylae Sciences & Technologies",
+            "sub_links": [
+              {
+                "id": "hs017",
+                "name": "Google Earth Enterprise Platform",
+                "path": ""
+              },
+              {
+                "id": "hs018",
+                "name": "On-premise",
+                "path": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "h002",
+        "name": "Data Providers",
+        "sub_links": [
+          {
+            "id": "hs019",
+            "name": "Maxar",
+            "path": ""
+          },
+          {
+            "id": "hs020",
+            "name": "Planet",
+            "path": ""
+          },
+          {
+            "id": "hs021",
+            "name": "TomTom",
+            "path": ""
+          },
+          {
+            "id": "hs022",
+            "name": "HERE Technologies",
+            "path": ""
+          },
+          {
+            "id": "hs023",
+            "name": "Carto",
+            "path": ""
+          },
+          {
+            "id": "hs024",
+            "name": "Mapbox",
+            "path": ""
+          }
+        ]
+      },
+      {
+        "id": "h003",
+        "name": "Solutions",
+        "sub_links": [
+          {
+            "id": "hs025",
+            "name": "Online APIs & Services Reseller of Global Providers",
+            "path": ""
+          },
+          {
+            "id": "hs026",
+            "name": "On-premise for closed networks",
+            "path": ""
+          },
+          {
+            "id": "hs027",
+            "name": "Offline from our data providers",
+            "path": ""
+          },
+          {
+            "id": "hs028",
+            "name": "Indoor Mapping",
+            "path": ""
+          },
+          {
+            "id": "hs029",
+            "name": "Complete tailor-made solutions",
+            "path": ""
+          }
+        ]
+      },
+      {
+        "id": "h004",
+        "name": "Services we offer",
+        "sub_links": [
+          {
+            "id": "hs030",
+            "name": "Consulting",
+            "path": ""
+          },
+          {
+            "id": "hs031",
+            "name": "Development",
+            "path": ""
+          },
+          {
+            "id": "hs032",
+            "name": "Processing",
+            "path": ""
+          },
+          {
+            "id": "hs033",
+            "name": "Training",
+            "path": ""
+          }
+        ]
+      },
+      {
+        "id": "h005",
+        "name": "Events",
+        "sub_links": [
+          {
+            "id": "hs034",
+            "name": "Upcoming events",
+            "path": ""
+          },
+          {
+            "id": "hs035",
+            "name": "Webinars",
+            "path": ""
+          }
+        ]
+      },
+      {
+        "id": "h006",
+        "name": "Resources",
+        "sub_links": [
+          {
+            "id": "hs036",
+            "name": "Open Sources",
+            "sub_links": [
+              {
+                "id": "hs038",
+                "name": "Cesium",
+                "path": ""
+              },
+              {
+                "id": "hs039",
+                "name": "QGIS",
+                "path": ""
+              },
+              {
+                "id": "hs040",
+                "name": "Leaflet",
+                "path": ""
+              }
+            ]
+          },
+          {
+            "id": "hs041",
+            "name": "DEMO SITES",
+            "sub_links": [
+              {
+                "id": "hs042",
+                "name": "HERE Navigation demo",
+                "path": ""
+              },
+              {
+                "id": "hs043",
+                "name": "Carto Demo Site",
+                "path": ""
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "footer": [
+      {
+        "id": "f0001",
+        "name": "Footer 1",
+        "path": ""
+      },
+      {
+        "id": "f0002",
+        "name": "Footer 2",
+        "path": ""
+      }
+    ],
+    "__v": 0
+  }
+} 

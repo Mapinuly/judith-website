@@ -1,0 +1,6 @@
+<!-- <p class="navbar-sub-item" [ngClass]="{ mobile: displayMode === NavbarDisplayMode.Mobile}" [routerLink]="subItem.link" > -->
+<p class="navbar-sub-item" [ngClass]="{ mobile: displayMode === NavbarDisplayMode.Mobile}" (click)="onNavigate()">
+  {{subItem?.title}}
+
+  <!-- <button (click)="onNavigate()">c</button> -->
+</p>

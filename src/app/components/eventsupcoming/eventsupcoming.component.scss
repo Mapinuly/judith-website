@@ -1,0 +1,159 @@
+.up-main{
+    padding-top: 100px;
+    .head{
+        h1{
+            font-size: 40px;
+            font-weight: 600;
+            padding-top: 30px;
+        }
+    }
+    img{
+        width: 800px;
+    }
+}
+.form-sec{
+    .form{
+       box-shadow: 0 0 1px;
+        height: 690px;
+        margin: 60px 350px 0 350px;
+        background: #d5d1fb;
+        border-radius: 30px;
+        .form-out{
+            display: flex;
+            margin: 72px 0px 0 175px;
+            .form-in{
+                gap: 71px;
+                .label{
+                    p{
+                        font-size: 15px;
+                    }
+                }
+                .event-input{
+                    width: 32rem;
+                    box-shadow: 0 0 1px;
+                    height: 42px;
+                    padding: 12px;
+                }
+            }
+        }
+
+    }
+
+    .form-head{
+        display: flex;
+        justify-content: center;
+    }
+    }
+    .check-agree{
+        label{
+            font-size: 14px;
+        }
+        input{
+            font-size: 20px;
+        }       
+    }
+    .ok-btn{
+        button{
+            padding: 10px 17px;
+            font-size: 14px;
+            border-radius: 6px;
+            background: #5f5f81;
+            color: #fff;
+        }
+    }
+
+
+    .upcomingEvents {
+        padding: 76px 0 60px;
+        min-height: calc(100vh - 75px);
+        margin-top: 76px;
+        .img-wrap {
+            width: 100%;
+            img {
+                max-width: 100%;
+            }
+        }
+        h2 {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        form {
+            display: inline-block;
+            width: 100%;
+            padding: 40px;
+            background: #d1d1d145;
+            border-radius: 10px;
+            label {
+                display: block;
+                input.event-input {
+                    width: 100%;
+                    font-size: 18px;
+                    border-bottom: 1px solid #7e7e7e;
+                    padding: 10px;
+                    border-radius: 0;
+                    outline: none;
+                    background: transparent;
+                    margin-bottom: 20px;
+                }
+                select {
+                    width: 100%;
+                    font-size: 18px;
+                    border-bottom: 1px solid #7e7e7e;
+                    padding: 10px;
+                    border-radius: 0;
+                    outline: none;
+                    background: transparent;
+                    margin-bottom: 20px;
+                }
+                &.lab {
+                    font-size: 16px;
+                }
+                input[type="checkbox"] {
+                    margin-right: 7px;
+                }
+            }
+            button {
+                padding: 10px;
+                font-size: 18px;
+                max-width: 200px;
+                width: 100%;
+                background: #000;
+                color: #fff;
+                border-radius: 40px;
+                margin-top: 20px;
+                transition: 0.4s ease-in-out;
+                border: 2px solid #000;
+                &:hover {
+                    background: transparent;
+                    color: #000;
+                }
+            }
+        }
+    }
+    .error-message{
+        color: red;
+        margin-top: -13px;
+    }
+    ::ng-deep .mat-snack-bar-container.custom-snackbar {
+        background-color: #f44336 !important; /* Red background color */
+        color: #fff !important; /* White text color */
+        margin-top: 100px;
+      }  
+      ::ng-deep .mat-snack-bar-container.custom-Success-snackbar{
+        background-color: green;
+        color: #fff;
+        margin-top: 100px;
+      }
+      input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.ok-btn{
+    span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

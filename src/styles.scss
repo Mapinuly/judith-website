@@ -1,0 +1,94 @@
+@import "material-icons/iconfont/material-icons.css";
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import url("https://fonts.googleapis.com/css2?family=Michroma&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  /*By Defalt the font size is 16px (1rem), But we want change the defalt to 10px for easy calculate rem, 100/16=0.625 */
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  // font-family: "Michroma", sans-serif;
+  //font-family: 'Cardo', serif;
+
+  width: 100%;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  //background-color: $ColorsTheme-4;
+}
+
+.main-title {
+  font-size: 48px;
+  font-weight: 600;
+  text-align: center;
+  text-shadow: 0 0 30px BLACK;
+  &.light {
+    color: #fff;
+  }
+}
+.desc-title {
+  line-height: 30px;
+  max-width: 700px;
+  color: #566171;
+  font-size: 22px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 400;
+  color: #000;
+}
+@import "./app/scss/buttons.scss";
+@import "./app/scss/animations.scss";
+
+
+h2.headingsec {
+  font-size: 36px;
+  margin-bottom: 25px;
+}
+
+p.normalDesc {
+  font-size: 18px;
+}
+
+p.normalDesc i {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+a.custom_btn {
+  padding: 14px 51px;
+  border-radius: 30px;
+  cursor: pointer;
+  background: #168FFF;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  margin-top: 20px;
+  display: inline-block;
+  transition: 0.4s ease-in-out;
+  border: 2px solid #168FFF;
+  font-weight: 700;
+}
+
+a.custom_btn:hover {
+  background: #fff;
+  color: #168FFF;
+}

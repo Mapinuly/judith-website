@@ -1,0 +1,29 @@
+.app-header {
+    width: 100%;
+    //background-color: gray;
+
+    &__logo {
+        position: fixed;
+        top: 1rem;
+        left: 1rem;
+        cursor: pointer;
+        z-index: 100;
+
+        img {
+            height: 5.5rem;
+            object-fit: cover;
+            filter: brightness(0) invert(1);
+        }
+
+        &.app-scrolled img {
+            height: 4.5rem;
+        }
+    }
+    &.dark {
+        .app-header__logo {
+            img {
+                filter: brightness(0) invert(0);
+            }
+        }
+    }
+}

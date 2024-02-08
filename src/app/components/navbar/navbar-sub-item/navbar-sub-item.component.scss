@@ -1,0 +1,40 @@
+app-navbar-sub-item{
+    &:not(:last-child){
+        margin-bottom: 1.5rem;
+    }
+}
+.navbar-sub-item{
+    background-color: rgb(245, 245, 245);
+    width: 100%;
+    max-width: 55rem;
+    display: block;
+    white-space: nowrap;
+    padding: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+
+    &:hover{
+        color: rgb(19, 19, 65);
+        font-weight: bold;
+    }
+
+    &.mobile{
+        // background-color: rgba(#222, .2);
+        background-color: black;
+        
+        margin-bottom: 1rem;
+        color:  rgb(46, 46, 46);
+        
+        border-bottom: 1px solid rgb(46, 46, 46);
+        border-radius: 0;
+        
+        p{
+            padding-bottom: 1rem;
+            &:hover{
+                color: white;
+            }
+        }
+        
+    }
+}

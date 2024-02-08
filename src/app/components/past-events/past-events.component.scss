@@ -1,0 +1,70 @@
+.pastEvents{
+    background-image: url('/assets/event-back.jpg');
+    background-size: cover; /* or 'contain' based on your preference */
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px; /* Set the desired height for the background */
+    color: #fff; /* Text color on top of the background */
+    text-align: center; /* Center-align the text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container{
+        background: rgba(0, 0, 0, 0.3); /* Semi-transparent background for content */
+        padding: 20px;
+        border-radius: 10px;
+ 
+        h2{
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+    }
+}
+.event-head {
+    padding-top: 3rem;
+    margin: 30px;
+    display: flex;
+    justify-content: space-around;
+    h1{
+        font-size: 36px;
+    }
+}
+
+.container{
+    max-width: 1620px;
+    ul{
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        li{
+            padding: 20px;
+            transition: 0.4s ease-in-out;
+            img{
+                width: 440px;
+                min-height: 441px;
+                object-fit: cover;                
+                &:hover{
+                    transform: scale(1.1); 
+                    transition: 0.3s ease-in-out;
+                }
+                
+            }
+            h1{
+                font-size: 26px;
+                padding-top: 15px;
+            }
+            p{
+              padding-top: 5px; 
+              font-size: 15px;
+              font-weight: 500;
+               
+
+            }
+            .date {
+                font-weight: 300;
+            }
+        }
+    }
+}

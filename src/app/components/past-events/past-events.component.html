@@ -1,0 +1,28 @@
+<app-navbar></app-navbar>
+
+<section class="pastEvents">
+<div class="container">
+    <h2>Past Events</h2>
+</div>
+</section>
+
+
+<div class="event-head">
+    <h1>Past Events</h1>
+</div>
+
+<div class="container">
+   <ul>
+    <li *ngFor="let product of theApiRes">
+        <img class="baseImage" *ngIf="product.img" [src]="BaseImg + product.img" alt="">
+        <h1>{{product?.title}}</h1>
+        <p>{{product?.description
+        }}</p>
+        <p class="date">
+            {{product?.start_date  | date:'dd/MM/yyyy'
+            }} at birmingham
+        </p>
+    </li>
+ 
+   </ul>
+</div>

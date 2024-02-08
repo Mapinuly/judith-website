@@ -1,0 +1,49 @@
+<app-navbar></app-navbar>
+
+<section class="top_headBanner text-center">
+    <div class="container">
+        <img src="assets/carto.png" class="g-cloud" alt="">
+        <button (click)="openContactUsDialog()"  class="contact-sales">
+            Contact us
+        </button>
+        <p>Since 2012, CARTO has become the world’s leading Location Intelligence Platform for spatial analysis.</p>
+
+
+        <p>Carto is a leading platform for location intelligence, empowering organizations to turn location data into actionable insights. With Carto's user-friendly tools and sophisticated spatial analysis capabilities, you can unlock the power of geographic data to make informed decisions, optimize operations, and drive growth. Carto can help you visualize, analyze, and gain valuable insights from your location data.</p>
+    </div>
+
+    <div class="vid">
+        <iframe width="860" height="485" src="https://www.youtube.com/embed/4hoU2vNl6wE?si=kaFkB0rNXMM0LPFA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <section class="featured_items">
+        <div class="container">
+            <h2 class="mb-5 text-center">CARTO's Location Intelligence platform allows organizations to store, enrich, analyze & visualize their data to make spatially-aware decisions.</h2>
+            <ul>
+                <li *ngFor="let product of products">
+                    <i  [class]="product.icon"></i>
+                    <h3>{{product?.title}} <span>{{ product?.description }}</span></h3>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="info">
+        <p>
+            80% of data collected by businesses has a location component, but only 10% is used to drive decision-making. Using Carto, organizations are able to both analyze Big Data and enrich the data from Carto’s extensive data library collection in order to tap into spatially-driven analytics have a unique opportunity to gain an edge and deliver on business goals.
+        </p>
+    </div>
+
+    <section class="featured_items2">
+        <div class="container">
+            <ul>
+                <li *ngFor="let product of productsData">
+                  <div class="icon-title">
+                    <i  [class]="product.icon"></i>
+                    <h3>{{product?.title}} </h3>
+                  </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+</section>

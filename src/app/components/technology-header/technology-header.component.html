@@ -1,0 +1,12 @@
+<section *ngIf="technologyData" class="technology__title">
+  <div class="technology__logo">
+    <img [src]="technologyData.technologylogo" alt="technology logo">
+  </div>
+  <h1 class="main-title">
+    {{technologyData.technologyName}}
+  </h1>
+  <p class="desc-title">
+    {{technologyData.summary}}
+  </p>
+  <button class="btn">Contact sales</button>
+</section>

@@ -1,0 +1,85 @@
+.companies {
+    // background-color: rgb(235, 235, 235);
+    // background-color: rgb(12, 12, 12);
+    // background-image: linear-gradient(110.3deg, rgb(16, 17, 19) 4.3%, rgb(14, 17, 31) 96.7%);
+    //   background-image: linear-gradient(110deg, #020008 4.3%, #05020a 96.7%);
+    // background-color: #020008;
+    background-color: #1f2029;
+    color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    min-height: 15rem;
+    flex-direction: column;
+
+    padding-top: 10rem;
+    padding-bottom: 15rem;
+
+    p {
+        font-size: 16px;
+        color: #fff;
+        font-weight: 500;
+        // text-transform: uppercase;
+    }
+    h4 {
+        margin-top: 1.5rem;
+    }
+
+    .logo-row {
+        margin-top: 5rem;
+        list-style: none;
+        display: grid;
+        width: 100%;
+        max-width: 1060px;
+        justify-items: center;
+        align-items: center;
+        grid-auto-columns: 1fr;
+        grid-column-gap: 16px;
+        grid-row-gap: 68px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+        padding-left: 0px;
+        // background-color: yellow;
+
+        li {
+            // background-color: blue;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            a {
+                // wid
+                // height: 3.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                filter: brightness(0) invert(0.3);
+                text-decoration: none;
+                transition: transform 0.5s;
+    
+                img {
+                    height: 55px;
+                    // width: 100%;
+                    max-width: 120px;
+                    object-fit: contain;
+                    // filter: brightness(0) invert(0.3);
+                    &.google-img
+                    {
+                        height: 50px;
+                    }
+                    &.workshop-img
+                    {
+                        max-width: 160px;
+                    }
+                }
+                &:hover {
+                    transform: translateY(4px);
+                    filter: brightness(1) invert(0);
+                }
+            }
+        }
+
+       
+    }
+}

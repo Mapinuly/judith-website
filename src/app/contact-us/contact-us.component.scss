@@ -1,0 +1,157 @@
+.contact-main{
+    position: relative;
+    border: 0.7px solid #D1D1D1;
+    height: 100%;
+    margin: 76px;
+    border-radius: 10px; 
+
+    .get-touch {
+        padding: 84px 0px 0px 75px;
+        font-weight: 600;
+        font-size: 19px;
+    }
+    .mail-contact{
+        padding: 80px 0 0 70px;
+        .mail{
+            display: flex;
+            img{
+                width: 23px;
+            }
+            .mail-text{
+                font-size: 12px;
+                margin-left: 37px;
+                margin-top: 10px;
+            
+            }
+        }
+        .contact{
+            display: flex;
+            margin-top: 23px;
+            img{
+                width: 20px;
+            }
+            .mail-text{
+                margin-left: 39px;
+                margin-top: 10px;
+            }
+        }
+    }
+    .bottom-div{
+        background-color: #168FFF;
+        height: 250px;
+        margin-top: 100px;
+    }
+    .form-div{
+        background-color: white;
+        /* border: 1px solid grey; */
+        height: 556px;
+        border: 0.7px solid #D1D1D1;
+        position: absolute;
+        max-width: 800px;
+        width: 100%;
+        left: 383px;
+        top: 49px;
+        border-radius: 15px;
+        .two-input{
+            margin: 44px 0px 0px 58px;
+            display: flex;
+            gap: 64px;
+            .name-input{
+                border: 1px solid #CECECE;
+                height: 54px;
+                width: 100%;
+                border-radius: 10px;
+                padding-left: 10px;
+            }
+            .mail-input{
+                border: 1px solid #CECECE;
+                height: 54px;
+                width: 100%;
+                border-radius: 10px;
+                padding-left: 10px;
+            }
+            
+
+        }
+        .message-div{
+            margin: 44px 0px 0px 58px;
+            .message-input{
+                border: 1px solid #CECECE;
+                padding-left: 10px;
+                border-radius: 10px;
+                width: 89%;
+                height: 130px;
+                padding-bottom: 77px;
+                padding-top: 10px;
+            }
+        }
+        .tech-div{
+            margin: 14px 0px 0px 58px;
+                
+                
+            .tech {
+                font-size: 19px;
+                font-weight: 600;
+            }
+        }
+        .check-main{
+            display: grid;
+            height: 100px;
+            grid-template-columns: repeat(3, 1fr);
+            padding: 0px 60px;
+            margin-top: 20px;
+            .check-div{
+                // margin: 35px 0px 0px 58px;
+                display: flex;
+                flex-direction: column;
+                gap: 17px;
+            }
+        }
+        .button-div{
+            display: flex;
+            justify-content: center;
+            margin: 28px 12px 12px -83px;
+            .submi-btn {
+                padding: 14px 51px;
+                border-radius: 30px;
+                cursor: pointer;
+                background: #168FFF;
+                color: white;
+            }
+        }
+    }
+   
+}
+
+.contact-head{
+    margin: 15px 0 0 57px;
+}
+
+.header{
+    font-size: 50px;
+    color: rgba(0, 0, 0, 0.28);
+    margin: 16px;
+}
+.invalid{
+    margin-top: 5px;
+}
+.error-message{
+    color: red;
+    margin-top: 5px;
+}
+.main-in{
+    width: 40%;
+}
+.main-in2{
+    width: 40%;
+}
+::ng-deep .mat-snack-bar-container.custom-snackbar {
+    background-color: #f44336 !important; /* Red background color */
+    color: #fff !important; /* White text color */
+    margin-top: 100px;
+  }  
+  ::ng-deep .mat-snack-bar-container.custom-Success-snackbar{
+    background-color: green;
+    color: #fff;
+    margin-top: 100px;
+  }

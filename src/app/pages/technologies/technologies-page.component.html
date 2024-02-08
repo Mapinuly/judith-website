@@ -1,0 +1,9 @@
+<header class="app-header dark">
+  <app-navbar [navbarDark]="true"></app-navbar>
+  <app-technology-header [technologyData]="technologyData"></app-technology-header>
+</header>
+
+<main>
+  <app-google-maps-platform-view *ngIf="technologyType === Technologies.GoogleMaps"></app-google-maps-platform-view>
+  <br>
+</main>

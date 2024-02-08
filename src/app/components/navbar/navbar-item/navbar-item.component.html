@@ -1,0 +1,33 @@
+<!-- Title -->
+<div class="navbar-item__title">
+
+  <div *ngIf="navItem.isDropdown" class="navbar-item__title-dropdown" [ngClass]="{'open': navItem.isDropdown && navItem.dropdownOpen}" (click)="toogleDropdown()">
+    {{navItem?.title}}
+    <i *ngIf="navItem.isDropdown" class="material-icons-two-tone">expand_more</i>
+  </div>
+
+  <div *ngIf="!navItem.isDropdown" class="navbar-item__title-link" [routerLink]="'/' + navItem.link"
+    routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+    {{navItem?.title}}
+  </div>
+</div>
+
+<div *ngIf="navItem.isDropdown && navItem.dropdownOpen" class="navbar-dropdown" [subItems]="navItem.subItems">
+
+</div>
+
+
+
+
+
+<!-- <li class="navbar-item" [ngClass]="{
+    clickable: !navItem.isDropdown,
+    open: navItem.isDropdown && navItem.dropdownOpen,
+    mobile: displayMode === NavbarDisplayMode.Mobile
+  }" (mouseover)="openDropdown()" (mouseout)="closeDropdown()">
+  {{ navItem.title }}
+  <i *ngIf="navItem.isDropdown" class="material-icons-two-tone">expand_more</i>
+
+  <app-navbar-dropdown *ngIf="navItem.isDropdown && navItem.dropdownOpen" [dropdownOpen]="navItem.dropdownOpen"
+    [subItems]="navItem.subItems" [displayMode]="displayMode"></app-navbar-dropdown>
+</li> -->

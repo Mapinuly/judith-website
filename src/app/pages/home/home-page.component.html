@@ -1,0 +1,31 @@
+<!-- <header class="app-header"> -->
+  <app-navbar></app-navbar>
+  <!-- <app-navbar-main>
+    
+  </app-navbar-main> -->
+
+  <app-banner>
+    <h1 class="main-title light">Welcome to GoGIS</h1>
+    <app-cards-carousel></app-cards-carousel>
+  </app-banner>
+  <app-represented-companies></app-represented-companies>
+<!-- </header> -->
+
+<main>
+
+  <app-about-us></app-about-us>
+
+  <section class="our-location">
+    <div class="container">
+      <h2 class="headingsec"> {{apiData?.title}}</h2>
+      <p class="normalDesc"> {{apiData?.description}}</p>
+      <div class="our-location-item">
+        <app-mapbox-globe></app-mapbox-globe>
+      </div>
+    </div>
+  </section>
+
+  <app-our-teams></app-our-teams>
+  <app-contact-us></app-contact-us>
+
+</main>

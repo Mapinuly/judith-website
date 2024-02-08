@@ -1,0 +1,27 @@
+<header class="app-header dark">
+    <app-navbar [navbarDark]="true"></app-navbar>
+</header>
+
+<main>
+
+    <app-banner>
+
+        <h1 class="main-title light">{{DataProvidersCompanyTypes[dataProviderCompanyType]}}</h1>
+
+        <br/>
+        
+        <app-carto-data-provider-view
+            *ngIf="dataProviderCompanyType === DataProvidersCompanyTypes.Carto"></app-carto-data-provider-view>
+
+        <app-hexagon-data-provider-view
+            *ngIf="dataProviderCompanyType === DataProvidersCompanyTypes.Hexagon"></app-hexagon-data-provider-view>
+
+        <app-planet-data-provider-view
+            *ngIf="dataProviderCompanyType === DataProvidersCompanyTypes.Planet"></app-planet-data-provider-view>
+
+        <app-mb-data-provider-view
+            *ngIf="dataProviderCompanyType === DataProvidersCompanyTypes.MB"></app-mb-data-provider-view>
+
+    </app-banner>
+
+</main>
