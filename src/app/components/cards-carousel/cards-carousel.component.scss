@@ -65,3 +65,12 @@
         }
     }
 }
+
+.hero-slider {
+    margin-right: 15px; /* Adjust the right margin to set the desired gap */
+  }
+  
+  .slick-center {
+    transform: scale(1.2); /* Adjust the scale factor for the center slide */
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+  }

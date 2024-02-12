@@ -12,14 +12,21 @@ export class CardsCarouselComponent implements OnInit {
   constructor(private cardService:CardService) { }
   cards:any[]=[];
 
+  slideConfig = {
+    slidesToShow: 3,
+    arrows: false,
+    dots: true,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed:2000,
+    slidesPerRow:2,
 
-    slideConfig = {
-      autoplay: true, 
-      autoplaySpeed: 3000, 
-    };
+ 
+  };
     
     ngOnInit() {
     this.cardService.getCards().subscribe((data:any) => {
+      console.log(data,"data")
       if (data) {
         this.cards = data;
       }

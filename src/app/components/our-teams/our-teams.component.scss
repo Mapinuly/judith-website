@@ -19,6 +19,7 @@
         flex-direction: row;
         // background: blue;
         margin-bottom: 17.5rem;
+        margin-top: 7rem;
 
         &__details {
             // background-color: red;
@@ -75,6 +76,19 @@
                 height: 100%;
                 // transform: rotate(-45deg) scale(1.4) translateX(-25px);
             }
+        }
+    }
+    .text-team{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p {
+        
+                font-size: 20px;
+                width: 100%;
+                max-width: 1000px;
+        
         }
     }
 }

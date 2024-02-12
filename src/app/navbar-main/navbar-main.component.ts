@@ -45,6 +45,7 @@ export class NavbarMainComponent implements OnInit {
   headerResponse: any[];
 
   toggleSection(sectionName: string) {
+    debugger
     if (this.activeSection === sectionName) {
       this.activeSection = null;
     } else {

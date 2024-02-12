@@ -33,6 +33,7 @@ export class ContactUsComponent implements OnInit {
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
       message: ['', Validators.required],
+      phone: ['', Validators.required],
       Technology_of_interest: this.fb.array([]),
     });
 
@@ -77,7 +78,7 @@ export class ContactUsComponent implements OnInit {
         name: this.contactForm.value.name, 
         sub_title: '', 
         email: this.contactForm.value.email,
-        phone: "",
+        phone: this.contactForm.value.phone,
         message: this.contactForm.value.message,
         Technology_of_interest: this.contactForm.value.Technology_of_interest.map((item: any) => ({
           title: item.title,

@@ -15,6 +15,7 @@ export class OurTeamsComponent implements OnInit {
 
   ngOnInit() {
     this.cardService.getOurTeamData().subscribe((response: any) => {
+      console.log(response,"respone teams ")
       if (response) {
         this.teamCards = response
       }

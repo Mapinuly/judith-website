@@ -63,11 +63,12 @@ export class GoogleMapsComponent implements OnInit {
       img: "https://www.gogis.co.il/assets/img/google-maps-routes2.jpeg"
     }
   ];
-   openContactModal(){
-    const dialogRef=this.matDialog.open(ContactusDialogComponent,{
+  openContactModalForMaps(){
+    this.matdialogForMap.open(ContactusDialogComponent,{
       width:'1200px',
-      height:'800px'
-    });
+      height:'800px',
+      disableClose: false
+    })
   }
 
   placesItems: TechnolgyItem[] = [
@@ -88,7 +89,7 @@ export class GoogleMapsComponent implements OnInit {
     }
   ];
 
-  constructor(public sanitizer:DomSanitizer, private synopsis:SynopsisService , private matDialog:MatDialog) { }
+  constructor(public sanitizer:DomSanitizer, private synopsis:SynopsisService ,private matdialogForMap:MatDialog) { }
 
   ngOnInit(): void {
   this.synopsis.synopsisData().subscribe((result:any)=>{
