@@ -151,8 +151,13 @@
     margin-top: 100px;
     line-height: 28px;
     background-color: #f7f9fc;
-    b {
-        font-size: 18px;
+    .title {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .description {
+        font-size: 14px;
+        margin-top: 31px;
     }
 }
 

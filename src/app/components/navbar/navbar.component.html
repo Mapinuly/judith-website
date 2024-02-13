@@ -53,30 +53,53 @@
                           <li>
                               <a class="dropdownlink">Real-Time Traffic</a>
                           </li>
-                          <li>
+                          <!-- <li>
                               <a class="dropdownlink">Data</a>
-                          </li>
+                          </li> -->
                           <li>
                               <a class="dropdownlink">Cloud</a>
                           </li>
                         </ul>
                       </div>
+
+
+                      <div>
+                        <h3 class="dropdown-heading added-new">Carto</h3>
+                        <ul  class="mb-0 ps-0 dropdown-listing">
+                          <li>
+                              <a class="dropdownlink">Online</a>
+                          </li>
+                          <!-- <li>
+                              <a class="dropdownlink">Data</a>
+                          </li> -->
+                          <li>
+                              <a class="dropdownlink">On-premise</a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 ">
                       <div>
                         <h3 class="dropdown-heading">Thermopylae Sciences & Technologies</h3>
                         <ul  class="mb-0 ps-0 dropdown-listing">
                           <li>
                               <a class="dropdownlink">Google Earth Enterprise Platform</a>
                           </li>
-                          <li>
-                              <a class="dropdownlink">On-premise</a>
-                          </li>
-                          <li>
-                              <a class="dropdownlink">Cloud</a>
-                          </li>
                         </ul>
                       </div>
+
+                      <div>
+                        <h3 class="dropdown-heading added-new">Mapbox</h3>
+                        <ul  class="mb-0 ps-0 dropdown-listing">
+                          <li>
+                              <a class="dropdownlink">Online</a>
+                          </li>
+                          <li>
+                            <a class="dropdownlink">Atlas</a>
+                        </li>
+                        </ul>
+                      </div>
+
                     </div>
                 </div>
             </div>
@@ -120,23 +143,66 @@
                     <div>
                       <ul  class="mb-0 ps-0 dropdown-listing">
                         <li>
-                            <a class="dropdownlink">Map</a>
+                            <a class="dropdownlink">Online API's & Services Reseller of Global Providers</a>
                         </li>
                         <li>
-                            <a class="dropdownlink">Workspace</a>
+                            <a class="dropdownlink">On-premise for closed networks</a>
                         </li>
                         <li>
-                            <a class="dropdownlink">Cloud</a>
+                            <a class="dropdownlink">offline from our data providers</a>
                         </li>
+                        <li>
+                          <a class="dropdownlink">Indoor Mapping</a>
+                      </li>
+                      <li>
+                        <a class="dropdownlink">Complete tailor made solutions</a>
+                    </li>
                       </ul>
                     </div>
                   </div>
               </div>
           </div>
           </li>
-          <li class="nav-item header-item">
-            <a class="nav-link header-link" href="#">Services we offer</a>
+          <li class="nav-item header-item has-children">
+            <a class="nav-link header-link" href="#">Services we offer <i class="fas fa-chevron-down"></i></a>
+            <div class="megamenu-header megamenu-inline">
+              <div class="row">
+                  <div class="col-md-12">
+                    <div>
+                      <ul  class="mb-0 ps-0 dropdown-listing">
+                        <li>
+                            <a  class="dropdownlink">Consulting</a>
+                        </li>
+                        <li>
+                          <a class="dropdownlink">Development</a>
+                      </li>
+                      <li>
+                        <a class="dropdownlink">Processing</a>
+                      </li>
+                      <li>
+                        <a class="dropdownlink">Training</a>
+                      </li>
+                      </ul>
+                    </div>
+                  </div>
+              </div>
+            </div>
           </li>
+
+
+
+          <!-- <li class="nav-item header-item">
+            <a class="nav-link header-link" href="#">Services we offer</a>
+          </li> -->
+
+
+
+
+
+
+
+
+
           <li class="nav-item header-item has-children">
             <a class="nav-link header-link" href="#">Events <i class="fas fa-chevron-down"></i></a>
             <div class="megamenu-header megamenu-inline">
@@ -147,9 +213,9 @@
                         <li routerLink="/upcoming-events">
                             <a  class="dropdownlink">Upcoming events</a>
                         </li>
-                        <li>
+                        <!-- <li>
                           <a class="dropdownlink">Past events</a>
-                      </li>
+                      </li> -->
                       <li>
                         <a class="dropdownlink">Webinars</a>
                       </li>
@@ -164,8 +230,39 @@
             <div class="megamenu-header megamenu-inline">
               <div class="row">
                   <div class="col-md-12">
-                    <div>
-                      <ul  class="mb-0 ps-0 dropdown-listing">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div>
+                          <h3 class="dropdown-heading">Open Sources</h3>
+                          <ul  class="mb-0 ps-0 dropdown-listing">
+                            <li routerLink="/google-maps">
+                                <a  class="dropdownlink">Cesium</a>
+                            </li>
+                            <li routerLink="/google-workspace">
+                                <a  class="dropdownlink">QGIS</a>
+                            </li>
+                            <li routerLink="/google-cloud">
+                                <a  class="dropdownlink">Leaflet</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div>
+                          <h3 class="dropdown-heading">DEMO SITES</h3>
+                          <ul  class="mb-0 ps-0 dropdown-listing">
+                            <li routerLink="/google-maps">
+                                <a  class="dropdownlink">Here Navigation Demo</a>
+                            </li>
+                            <li routerLink="/google-workspace">
+                                <a  class="dropdownlink">Carto Demo Site</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <!-- <ul  class="mb-0 ps-0 dropdown-listing">
                         <li>
                             <a class="dropdownlink">Open Sources </a>
                         </li>
@@ -173,7 +270,7 @@
                           <a class="dropdownlink">DEMO SITES
                           </a>
                         </li>
-                      </ul>
+                      </ul> -->
                     </div>
                   </div>
               </div>

@@ -55,13 +55,13 @@
          </div>
        </div>
        </div>
-       <!-- <div class="phone-div">
+       <div class="phone-div">
         <input class="mail-input" formControlName="phone" type="number" placeholder="Phone no.">
-        <div *ngIf="contactForm.get('phone').touched && contactForm.get('phone').hasError('required')"
+        <!-- <div *ngIf="contactForm.get('phone').touched && contactForm.get('phone').hasError('required')"
           class="error-message">
           Phone No. is required.
-        </div>
-      </div> -->
+        </div> -->
+      </div>
        <div class="message-div">
         <!-- <input type="text" formControlName="message" class="message-input" placeholder="Message"> -->
         <textarea formControlName="message" class="message-input" placeholder="Message"></textarea>
@@ -74,13 +74,14 @@
             <p class="tech">Technology of interest</p>
         </div>
         <div class="check-main">
-            <div class="check-div" *ngFor="let item of checkboxItems">
-              <label for="{{ item }}">
-                <input type="checkbox" (change)="onCheckboxChange($event, item)"  >
-                {{ item.title }}
-              </label>
-            </div>
+          <div class="check-div" *ngFor="let item of checkboxItems " >
+            <label for="{{ item }}">
+              <input type="checkbox" [checked]="dataOfCheck?.includes(item.title)" [id]="item.title"
+                (change)="onCheckboxChange($event, item)" />
+              {{ item.title }}
+            </label>
           </div>
+        </div>
       <div class="button-div">
         <button type="submit" class="submi-btn" [disabled]="isLoading">
           <span *ngIf="isLoading">

@@ -14,6 +14,7 @@ export class ContactusDialogComponent implements OnInit {
   contactForm : FormGroup
   ApiData:any
   isLoading: boolean=false;
+  dataOfCheck:any = []
 
   checkboxItems = [
     { title: 'Google Maps Platform', value: 'Google Maps Platform' },
@@ -32,6 +33,7 @@ export class ContactusDialogComponent implements OnInit {
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
       message: ['', Validators.required],
+      phone:['', Validators.required],
       Technology_of_interest: this.fb.array([]),
     });
     this.dialogRef = dialogRef;
@@ -41,7 +43,7 @@ export class ContactusDialogComponent implements OnInit {
       verticalPosition: 'top',
       horizontalPosition: 'end',
       panelClass: ['custom-Success-snackbar'],
-      duration: 3000,
+      duration: 2000,
     });
   }
   get selectedTechnologyArray() {
@@ -50,16 +52,21 @@ export class ContactusDialogComponent implements OnInit {
 
   onCheckboxChange(event: any, item: any) {
     const formArray: FormArray = this.selectedTechnologyArray;
+   
     if (event.target.checked) {
+      this.dataOfCheck.push(item.title)
       formArray.push(this.fb.group({
         title: item.title,
         options: item.options
       }));
     } else {
+      const arrIndex=this.dataOfCheck.indexOf(item)
+      
       const index = formArray.controls.findIndex(
         (control) => control.value.options === item.options
       );
       formArray.removeAt(index);
+      this.dataOfCheck.splice(arrIndex, 0)
     }
   }
   onSubmit() {
@@ -71,7 +78,7 @@ export class ContactusDialogComponent implements OnInit {
         name: this.contactForm.value.name, 
         sub_title: '', 
         email: this.contactForm.value.email,
-        phone: "",
+        phone: this.contactForm.value.phone,
         message: this.contactForm.value.message,
         Technology_of_interest: this.contactForm.value.Technology_of_interest.map((item: any) => ({
           title: item.title,
@@ -114,11 +121,15 @@ export class ContactusDialogComponent implements OnInit {
     this.dialogRef.close();
   }
   resetForm(){
+    this.dataOfCheck=[]
     this.contactForm = this.fb.group({
+      
             name: [''],
             email: [''],
             message: [''],
-            Technology_of_interest:[]
+            phone:[''],
+            Technology_of_interest:[],
+            
           });
   }
  

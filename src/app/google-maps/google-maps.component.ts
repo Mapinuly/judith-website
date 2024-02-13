@@ -93,6 +93,7 @@ export class GoogleMapsComponent implements OnInit {
 
   ngOnInit(): void {
   this.synopsis.synopsisData().subscribe((result:any)=>{
+    debugger
     if(result){
       this.apiData=result[0];      
     }

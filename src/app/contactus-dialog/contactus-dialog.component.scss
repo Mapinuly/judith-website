@@ -44,7 +44,7 @@
     }
     .form-div{
         background-color: white;
-        height: 578px;
+        height: 625px;
         border: 0.7px solid #D1D1D1;
         left: 383px;
         top: 49px;
@@ -69,6 +69,21 @@
             }
             
 
+        }
+        .phone-div{
+            margin: 44px 0px 0px 58px;
+            .mail-input{
+                border: 1px solid #CECECE;
+                height: 54px;
+                width: 40%;
+                border-radius: 10px;
+                padding-left: 10px;
+            }
+            input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
         }
         .message-div{
             margin: 44px 0px 0px 58px;

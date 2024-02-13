@@ -90,8 +90,9 @@ export class ContactUsComponent implements OnInit {
         (response) => {
           console.log('API Response', response);
           this.showSubmitSuccessSnackbar();
+
           this.resetForm()
-          this.isLoading=false
+        
         },
         (error) => {
           console.error('API Error', error);
@@ -108,6 +109,7 @@ export class ContactUsComponent implements OnInit {
             panelClass: ['custom-snackbar'], 
           });
         },
+        
        
       );
     } else {
@@ -117,6 +119,7 @@ export class ContactUsComponent implements OnInit {
   }
   resetForm(){
     this.dataOfCheck=[]
+    this.isLoading = false; 
     this.contactForm = this.fb.group({
             name: [''],
             email: [''],
