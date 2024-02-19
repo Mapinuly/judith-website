@@ -1,87 +1,82 @@
 <div class="contact-head">
-    <button  mat-dialog-close  mat-icon-button 
-            style="
+  <button mat-dialog-close mat-icon-button style="
               float:right;
               margin:6px;
               font-size:22px;
               background-color: #fff;
               border: none;
               ">
-        <i  class="fas fa-times"></i>
-      </button>
-    <p class="header">Contact Us</p>
+    <i class="fas fa-times"></i>
+  </button>
+  <p class="header">Contact Us</p>
 </div>
 <div class="contact-main">
-   <!-- <p class="get-touch">{{ApiData?.sub_title}}</p> -->
-   <p class="get-touch">GET IN TOUCH</p>
+  <!-- <p class="get-touch">{{ApiData?.sub_title}}</p> -->
+  <p class="get-touch">GET IN TOUCH</p>
 
-   <div class="mail-contact">
+  <div class="mail-contact">
     <div class="mail">
-        <img src="assets/mail.svg" alt="">
-        <!-- <p class="mail-text">{{ApiData?.email}}</p> -->
-        <p class="mail-text">info@gogis.co.il</p>
-        
+      <img src="assets/mail.svg" alt="">
+      <!-- <p class="mail-text">{{ApiData?.email}}</p> -->
+      <p class="mail-text">info@gogis.co.il</p>
+
     </div>
     <div class="contact">
-        <img src="assets/contact.svg" alt="">
-        <!-- <p class="mail-text">{{ApiData?.phone}}</p> -->
-        <p class="mail-text">+972-527725051</p>
+      <img src="assets/contact.svg" alt="">
+      <!-- <p class="mail-text">{{ApiData?.phone}}</p> -->
+      <p class="mail-text">+972-527725051</p>
     </div>
-   </div>
-   <div class="bottom-div">
+  </div>
+  <div class="bottom-div">
 
-   </div>
-   <div class="form-div">
-    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" >
+  </div>
+  <div class="form-div">
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
       <div class="two-input">
         <div class="main-in">
-         <input class="name-input" formControlName="name" type="text" placeholder="Name">
-         <div *ngIf="contactForm.get('name').touched && contactForm.get('name').hasError('required')"
-           class="error-message">
-           Name is required.
-         </div>
+          <input class="name-input" formControlName="name" type="text" placeholder="Name">
+          <div *ngIf="contactForm.get('name').touched && contactForm.get('name').hasError('required')"
+            class="error-message">
+            Name is required.
+          </div>
         </div>
- 
-         <div class="main-in">
-           <input class="mail-input" formControlName="email" type="text" placeholder="E-mail">
-         <div *ngIf="contactForm.get('email').touched && contactForm.get('email').hasError('required')"
-           class="error-message">
-           Email is required.
-         </div>
-        
-         <div *ngIf="contactForm.get('email').touched && contactForm.get('email').hasError('email')"
-           class="error-message">
-           Invalid email format.
-         </div>
-       </div>
-       </div>
-       <div class="phone-div">
-        <input class="mail-input" formControlName="phone" type="number" placeholder="Phone no.">
-        <!-- <div *ngIf="contactForm.get('phone').touched && contactForm.get('phone').hasError('required')"
-          class="error-message">
-          Phone No. is required.
-        </div> -->
+
+        <div class="main-in">
+          <input class="mail-input" formControlName="email" type="text" placeholder="E-mail">
+          <div *ngIf="contactForm.get('email').touched && contactForm.get('email').hasError('required')"
+            class="error-message">
+            Email is required.
+          </div>
+
+          <div *ngIf="contactForm.get('email').touched && contactForm.get('email').hasError('email')"
+            class="error-message">
+            Invalid email format.
+          </div>
+        </div>
       </div>
-       <div class="message-div">
-        <!-- <input type="text" formControlName="message" class="message-input" placeholder="Message"> -->
+      <div class="phone-div">
+        <input class="mail-input" formControlName="phone" type="number" placeholder="Phone no." >
+
+      </div>
+      <div class="message-div">
         <textarea formControlName="message" class="message-input" placeholder="Message"></textarea>
         <div *ngIf="contactForm.get('message').touched && contactForm.get('message').hasError('required')"
           class="error-message">
           Message is required.
         </div>
       </div>
-        <div class="tech-div">
-            <p class="tech">Technology of interest</p>
+      <div class="tech-div">
+        <p class="tech">Technology of interest</p>
+      </div>
+      <div class="check-main">
+        <div class="check-div" *ngFor="let item of checkboxItems ">
+          <label for="{{ item }}">
+            <input type="checkbox" [checked]="dataOfCheck?.includes(item.title)" [id]="item.title"
+              (change)="onCheckboxChange($event, item)" />
+            {{ item.title }}
+          </label>
         </div>
-        <div class="check-main">
-          <div class="check-div" *ngFor="let item of checkboxItems " >
-            <label for="{{ item }}">
-              <input type="checkbox" [checked]="dataOfCheck?.includes(item.title)" [id]="item.title"
-                (change)="onCheckboxChange($event, item)" />
-              {{ item.title }}
-            </label>
-          </div>
-        </div>
+      </div>
       <div class="button-div">
         <button type="submit" class="submi-btn" [disabled]="isLoading">
           <span *ngIf="isLoading">
@@ -91,5 +86,5 @@
         </button>
       </div>
     </form>
-   </div>
+  </div>
 </div>

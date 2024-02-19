@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ContactService } from '../services/contact.service';
-import { ReactiveFormsModule,FormBuilder, FormGroup, Validators, FormArray } from '@angular/forms';
+import { ReactiveFormsModule,FormBuilder, FormGroup, Validators, FormArray, AbstractControl, ValidatorFn  } from '@angular/forms';
 import { MatDialogRef } from '@angular/material/dialog';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
@@ -33,7 +33,7 @@ export class ContactusDialogComponent implements OnInit {
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
       message: ['', Validators.required],
-      phone:['', Validators.required],
+      phone: ['', [Validators.required]],
       Technology_of_interest: this.fb.array([]),
     });
     this.dialogRef = dialogRef;

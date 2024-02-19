@@ -22,7 +22,7 @@ export class EventsupcomingComponent implements OnInit {
       lastname:['',Validators.required],
       jobdescription:['',Validators.required],
       organisation:['',Validators.required],
-      phone1:['',[Validators.required, this.phoneNumberValidator(),Validators.maxLength(10)]],
+      phone1:['',[Validators.required, ]],
       phone2:[''],
       email:['',[Validators.required, Validators.email]],
     })

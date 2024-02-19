@@ -42,9 +42,6 @@
                         <div *ngIf="eventForm.get('phone1').touched && eventForm.get('phone1').hasError('required')" class="error-message">
                             Phone is required.
                           </div>
-                          <div *ngIf="eventForm.get('phone1').touched && eventForm.get('phone1').hasError('invalidPhoneNumber') && !eventForm.get('phone1').hasError('required')" class="error-message">
-                            Invalid phone number. Please enter 10 digits.
-                          </div>
                     </label>
                     <label><input type="number" class="event-input" formControlName="phone2" placeholder="Phone Number 2">
                       
