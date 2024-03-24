@@ -12,17 +12,44 @@ export class CardsCarouselComponent implements OnInit {
   constructor(private cardService:CardService) { }
   cards:any[]=[];
 
+  // slideConfig = {
+  //   slidesToShow: 3,
+  //   arrows: false,
+  //   dots: true,
+  //   infinite: true,
+  //   autoplay: true,
+  //   autoplaySpeed:2000,
+  //   slidesPerRow:2,
+  // };
+
   slideConfig = {
     slidesToShow: 3,
-    arrows: false,
-    dots: true,
-    infinite: true,
-    autoplay: true,
-    autoplaySpeed:2000,
-    slidesPerRow:2,
-
- 
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024, // Medium devices (tablets, 768px and up)
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 768, // Small devices (landscape phones, 576px and up)
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 576, // Extra small devices (portrait phones, less than 576px)
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
+  
     
     ngOnInit() {
     this.cardService.getCards().subscribe((data:any) => {

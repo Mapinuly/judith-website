@@ -4,3 +4,31 @@
     margin: auto;
     // background-color: red;
 }
+@media screen and (max-width: 991px) {
+    .globe{
+        width: 600px !important;
+        margin: 0 auto -200px ;
+        object-fit: contain !important;
+    }
+}
+@media screen and (max-width: 768px) {
+    .globe{
+        width: 600px !important;
+        margin: 0 auto -300px ;
+        object-fit: contain !important;
+    }
+}
+@media screen and (max-width: 575px) {
+
+    .globe {
+        width: 100% !important;
+        margin: 0 auto -300px;
+        object-fit: contain !important;
+    }
+
+    .globe canvas.mapboxgl-canvas {
+        width: 100% !important;
+        height: 100% !important;
+    }
+}
+

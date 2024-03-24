@@ -170,3 +170,17 @@ input::-webkit-inner-spin-button {
     color: #fff;
     margin-top: 100px;
   }
+  @media screen and (max-width: 1024px) {
+    .contact-main .form-div {
+
+        position: relative;
+        max-width: 100%;
+        left: 0px;
+        background-color: #ffffff00;
+        border: none;
+    }
+    .contact-main .bottom-div {
+        display: none;
+    }
+  }
+ 
